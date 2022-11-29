@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La répartition des boulangeries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2> Ile de france et ses boulangeries</h2>
+                <p>Vous habitez en ile de france et vous cherchez une boulangerie? Ce site est la pour vous donner une
+                    meilleure visibilité de la répartition des boulangerie</p>
+            </div>
+
+            <div class="imgBox">
+                <img src="/img/pain.png" class="pain">
+            </div>
+        </div>
+        <ul class="thumb">
+
+            <li> <img src="/img/thumb1.png" onclick="imgSlider('pain.png'); changeColor('#FEFCF3')"> </li>
+            <li> <img src="/img/thumb2.png" onclick="imgSlider('gateau.png'); changeColor('#AD8B73')"> </li>
+            <li> <img src="/img/thumb3.png" onclick="imgSlider('Croissant.png'); changeColor('#E2C275')"> </li>
+
+
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pain').src = anything;
+        }
+
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
