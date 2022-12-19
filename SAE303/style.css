@@ -145,18 +145,4 @@ section {
     transform: translateY(2em);
 }
 
-/*.box-container .box {
-    flex: 1 1 10rem;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    height: 301px;
-}
 
-h5{
-    
-    background-color: rgb(255, 255, 255);
-}
