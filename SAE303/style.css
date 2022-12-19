@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: rgb(86, 74, 11);
+    font-size: 50px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+.content .imgBox {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 150px;
+    padding-top: 150px;
+}
+
+.pain {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0,5s; /* temps de transition au survol */
+}
+
+.thumb li :hover{
+    transform: translateY(-10px); /* changement de la position verticale au survol */
+}
+
+.thumb li img {
+    max-width: 60px; /* taille maximale des images de la classe thumb  */
+}
+
+/* style pour le cercle coloré en arrière plan */
+
+.circle {
+    position: absolute;
+    top: 0; /* positionnement (haut) */
+    left: 0; /* positionnement (gauche) */
+    width: 100%; /* largeur */
+    height: 100%; /* hauteur */
+    background: rgb(255, 250, 180); /* couleur d'arrière plan */
+    clip-path: circle(600px at right 700px); /* effet de mouvement pour changer d'image */
+}
