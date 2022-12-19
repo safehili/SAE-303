@@ -48,14 +48,115 @@ section {
     max-height: 300px;
 }
 
-/* style pour le cercle coloré en arrière plan */
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0, 5s;
+}
+
+.thumb li :hover {
+    transform: translateY(-10px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
 
 .circle {
     position: absolute;
-    top: 0; /* positionnement (haut) */
-    left: 0; /* positionnement (gauche) */
-    width: 100%; /* largeur */
-    height: 100%; /* hauteur */
-    background: rgb(255, 250, 180); /* couleur d'arrière plan */
-    clip-path: circle(600px at right 700px); /* effet de mouvement pour changer d'image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 250, 180);
+    clip-path: circle(600px at right 700px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    
+    
+}
+.card{
+    position: relative;
+    left: -6%;
+    width: 300px;
+    height: 370px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgb(0, 0, 0, 0.7);
+    }
+
+.card .imgbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .contenu{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 26px;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 217);
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.card:hover .contenu{
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+}
+
+.contenu p {
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+}
+
+/*.box-container .box {
+    flex: 1 1 10rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 301px;
+}
+
+h5{
+    
+    background-color: rgb(255, 255, 255);
 }
