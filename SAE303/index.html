@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La répartition des boulangeries</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importation du style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="ressources/boutons.css"> <!-- Importation du CSS pour les boutons -->
+    <link rel="stylesheet" href="ressources/footer.css"> <!-- Importation du CSS pour le footer -->
+    <link rel="shortcut icon" type="image/png" href="ressources/images-patisseries/croissant-favicon.png" alt="logo"> <!-- Ajout d'un favicon -->
+    <script src="ressources/jquery-1.10.2.js"></script> <!-- Importation du script pour le footer -->
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2> L' Île-de-France et ses boulangeries</h2>
+                <p>Vous habitez en Île-de-France et vous cherchez une boulangerie ? Ce site est là pour vous donner une
+                    meilleure visibilité de la répartition des boulangeries</p>
+                    
+                    <br>
+                    <a href="trouver-une-boulangerie/index.html" class="boutons">Trouver une boulangerie</a> <!-- Création d'un bouton -->
+                    <br><br>
+                    <a href="statistiques/index.html" class="boutons">Statistiques</a> <!-- Création d'un bouton -->
+            </div>
+
+            <div class="imgBox">
+                <img src="ressources/images-patisseries/pain.png" class="pain"> <!-- Ajout de l'image d'une baguette -->
+            </div>
+        </div>
+
+        <section> <!-- Ajout de la selection -->
+
+            <h2>Notre sélection pour vous !</h2>
+    
+            <div class="container">
+                
+    
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="ressources/images-patisseries/maison-kerck.jpg" alt="image de la boulangerie 'La maison Kerck'">
+                    </div>
+    
+                    <div class="contenu">
+                        <h4>La maison Kerck</h4>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Pains et viennoiseries, mais aussi spécialités orientales, pour cette petite boulangerie à façade
+                            en verre.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="ressources/images-patisseries/saveurs-asnieres.jpg" alt="Image de la boulangerie 'Les saveurs d'Asnieres'">
+                    </div>
+    
+                    <div class="contenu">
+                        <h4>Les saveurs d'Asnières</h4>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Le commerce vous propose des glaces, du pain bio, ainsi que des viennoiseries régionales.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="ressources/images-patisseries/maison-gauthier.jpg" alt="Image de la boulangerie 'Maison Gauthier Beauchamp'">
+                    </div>
+    
+                    <div class="contenu">
+                        <h4>Maison Gauthier Beauchamp</h4>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Vous pourrez trouver ici des confiseries, une large variété de 
+                        produits biologiques, des pâtisseries, ainsi que des glaces.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!-- Fin de la selection -->
+        
+    </section>
+
+    <script> 
+        $(function(){
+           $('.footer').load("ressources/footer.html"); // ajout d'un footer avec jquery
+        });
+     </script> 
+    <div class="footer">
+    </div>
+</body>
+</html>

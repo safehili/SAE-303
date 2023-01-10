@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #cfb73e;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.createurs{
+    text-align: center;
+}

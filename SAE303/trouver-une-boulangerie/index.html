@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouver une boulangerie</title>
+    <link rel="stylesheet" href="style.css"/> <!-- Importation du style -->
+    <link rel="stylesheet" href="../ressources/boutons.css"> <!-- Importation du CSS pour les boutons -->
+    <link rel="stylesheet" href="../ressources/footer.css"> <!-- Importation du CSS pour le footer -->
+    <link rel="shortcut icon" type="image/png" href="../ressources/images-patisseries/croissant-favicon.png" alt="logo">  <!-- Ajout d'un favicon -->
+    <script src="../ressources/jquery-1.10.2.js"></script> <!-- Importation du script pour le footer -->
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+
+                <br>
+                    <a href="../index.html" class="boutons">Accueil</a> <!-- Création d'un bouton -->
+                    <br><br>
+                    <a href="../statistiques/index.html" class="boutons">Statistiques</a> <!-- Création d'un bouton -->
+                <br><br><br><br>
+
+                <h1 class="titre">Chercher une boulangerie en Île-de-France</h1>
+
+                <h3> Cherchez une boulangerie grace à la carte ci-dessous</h3>
+
+                <h5> Le premier formulaire de recherche permet de trouver les boulangeries, 
+                le second permet de filtrer la zone</h5>
+
+                <!-- Balise iframe pour executer une page html dans un cadre -->
+                <iframe id="map"
+                    title="Carte intéractive"
+                    width="300"
+                    height="200"
+                    src="map/index.html"> <!-- Lien vers le fichier html -->
+                    </iframe>
+
+            <br><br>
+            <h3> Les données de la carte OpenStreetMap 
+             sont disponibles sous la licence ODbL (Open Database License)</h3>
+                    
+            </div>
+        </div>
+        
+    </section>
+    <script> 
+        $(function(){
+           $('.footer').load("../ressources/footer.html"); // ajout d'un footer
+        });
+     </script> 
+    <div class="footer">
+    </div>
+</body>
+</html>
