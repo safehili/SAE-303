@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../ressources/boutons.css">
+    <link rel="stylesheet" href="../ressources/footer.css">
+    <link rel="shortcut icon" type="image/png" href="../ressources/images-patisseries/croissant-favicon.png" alt="logo">
+    <script src="../ressources/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+
+                <br>
+                    <a href="../index.html" class="boutons">Accueil</a>
+                    <br><br>
+                    <a href="../trouver-une-boulangerie/index.html" class="boutons">Trouver une boulangerie</a>
+                <br><br><br><br>
+
+                <h1 class="titre">Le graphique ci-dessous indique le nombre de boulangers par département en Île-de-France</h1>
+
+                <iframe id="graphique"
+                    title="Carte intéractive"
+                    width="300"
+                    height="200"
+                    src="graphique.html">
+                    </iframe>
+                    
+            </div>
+        </div>
+        
+    </section>
+    <script> 
+        $(function(){
+           $('.footer').load("../ressources/footer.html"); // ajout d'un footer
+        });
+     </script> 
+    <div class="footer">
+    </div>
+</body>
+</html>
